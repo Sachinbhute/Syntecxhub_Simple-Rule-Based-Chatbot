@@ -5,11 +5,14 @@ import numpy as np
 import tensorflow as tf
 
 import nltk
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open('C:\Simplilearn\Python\Python projects\chatbot using python\chatbot\intents.json').read())
+intents = json.loads(open(r'C:\Users\Sachin\Desktop\SyntexHub Ai\Syntecxhub_Simple-Rule-Based-Chatbot\intents.json').read())
 
 words = []
 classes = []
@@ -66,5 +69,3 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 hist = model.fit(np.array(trainX), np.array(trainY), epochs=200, batch_size=5, verbose=1)
 model.save('chatbot_model.h5', hist)
 print('Done')
-
-
