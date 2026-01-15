@@ -1,22 +1,160 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["My pleasure", "You're Welcome"],
-         "context": [""]
-        },
-        {"tag": "query",
-         "patterns": ["What is Simplilearn?"],
-         "responses": ["Simplilearn is the popular online Bootcamp & online courses learning platform "],
-         "context": [""]
-        } 
-    ]}
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hi there",
+        "Hey",
+        "Hello",
+        "Hola",
+        "Good morning",
+        "Good evening",
+        "Good day",
+        "Is anyone there?",
+        "Hey bot"
+      ],
+      "responses": [
+        "Hello! 👋",
+        "Hi there, how can I help you?",
+        "Hey! What can I do for you today?",
+        "Good to see you again!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "See you soon",
+        "Nice chatting to you",
+        "Till next time",
+        "I have to go"
+      ],
+      "responses": [
+        "See you! 👋",
+        "Have a great day!",
+        "Bye! Come back again soon.",
+        "Take care!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Thanks a lot",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome 😊",
+        "Happy to help!",
+        "My pleasure!",
+        "Anytime!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "about_bot",
+      "patterns": [
+        "Who are you?",
+        "What is your name?",
+        "Tell me about yourself",
+        "What can you do?",
+        "Are you a chatbot?"
+      ],
+      "responses": [
+        "I'm SyntexHub AI 🤖, your virtual assistant.",
+        "I am a chatbot designed to help answer your questions.",
+        "I'm here to assist you with information and support."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "I need help",
+        "Can you help me?",
+        "Support",
+        "What should I do?"
+      ],
+      "responses": [
+        "Sure! Tell me what you need help with.",
+        "I'm here to help. Please describe your issue.",
+        "How can I assist you today?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What services do you offer?",
+        "What can you help me with?",
+        "Your services",
+        "Features",
+        "What do you provide?"
+      ],
+      "responses": [
+        "I can help with general queries, guidance, and information.",
+        "I assist users by answering questions and providing support.",
+        "You can ask me anything related to this platform."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact support?",
+        "Contact details",
+        "Customer care",
+        "Support email",
+        "How to reach you?"
+      ],
+      "responses": [
+        "You can contact our support team via email or the help section.",
+        "Please visit the Contact Us page for support details.",
+        "Our team is always ready to assist you."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What are your working hours?",
+        "When are you available?",
+        "Are you open now?",
+        "Support hours",
+        "Availability"
+      ],
+      "responses": [
+        "I'm available 24/7 to assist you!",
+        "You can reach me anytime.",
+        "I'm always here to help 😊"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "I don't understand",
+        "That doesn't make sense",
+        "What?",
+        "Can you repeat?",
+        "I am confused"
+      ],
+      "responses": [
+        "I'm sorry, I didn't quite understand that.",
+        "Could you please rephrase your question?",
+        "Let's try again. What would you like to know?"
+      ],
+      "context": [""]
+    }
+  ]
+}

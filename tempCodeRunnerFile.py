@@ -1,0 +1,1 @@
+C:\Users\Sachin\Desktop\SyntexHub Ai\Syntecxhub_Simple-Rule-Based-Chatbot\intents.json
